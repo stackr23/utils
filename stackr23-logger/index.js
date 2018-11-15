@@ -4,13 +4,9 @@ export const chalkExt = chalk
 
 export default new class Logger {
 
-    defaults = {
-        prefix:     '{yellow [StackR23]}'
-    }
+    defaults = {prefix: '{yellow [StackR23]}'}
 
-    constructor(args) {
-        // TBD
-    }
+    constructor(args) {}
 
     logArgs (...output) {
         console.log(...output)
@@ -30,8 +26,8 @@ export default new class Logger {
         return true
     }
 
-    debug   = (str) => this.log(str, 'DEBUG', 'cyanBright', 'cyan')
-    error   = (str) => this.log(str, 'ERROR', 'redBright.bgBlack', 'red')
-    success = (str) => this.log(str, 'SUCCESS', 'greenBright', 'green')
+    debug   = (str) => this.log(str, 'DEBUG',   'cyanBright',           'cyan')
+    error   = (str) => this.log(str, 'ERROR',   'redBright.bgBlack',    'red')
+    success = (str) => this.log(str, 'SUCCESS', 'greenBright',          'green')
 
 }
