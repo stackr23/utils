@@ -1,0 +1,10 @@
+[alias]
+	s = status
+[core]
+# editor for commit messages
+	editor = subl -n -w
+# editor for diffs
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --diff $LOCAL $REMOTE
